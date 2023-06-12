@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.seccion-1 {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.seccion-2 {
+  background-color: bisque;
+  flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .seccion-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
