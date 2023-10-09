@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <form action="" class="border shadow shadow-md p-4 rounded-4">
+        <div class="mb-3">
+          <label for="name" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="introduce tu nombre"
+            id="nombre"
+            name="nombre"
+          />
+          <div class="form-text">nombre de pila</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="mayor"
+            id="mayor"
+          />
+          <label for="mayor" class="form-check-label">eres mayor de edad</label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control form-control-sm form-control-plaintext"
+            readonly
+            value="miemail@gmail.com"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="example-input-name"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="example-input-password"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            name="example-check1"
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label col-form"
+            >Sube tu archivo</label
+          >
+          <input
+            class="form-control form-control"
+            type="file"
+            id="formFile"
+            name="file"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleColorInput" class="form-label"
+            >Selecciona Color
+          </label>
+          <input
+            type="color"
+            class="form-control form-control-color"
+            id="exampleColorInput"
+            value="#563d7c"
+            title="Choose your color"
+            name="example-color"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="ciudad" class="form-label">Introduce tu Ciudad</label>
+          <input
+            id="ciudad"
+            type="datalist"
+            class="form-control"
+            placeholder="Seleccionar"
+            list="datalist-options"
+            name="ciudad"
+          />
+          <datalist id="datalist-options">
+            <option value="madrid" />
+            <option value="Barcelona" />
+            <option value="Valencia" />
+            <option value="Huelva" />
+            <option value="Bilbao" />
+          </datalist>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <button type="submit" class="col-6 btn btn-lg btn-primary">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
